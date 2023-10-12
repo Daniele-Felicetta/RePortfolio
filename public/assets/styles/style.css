@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+/*
+font-family: 'Rajdhani', sans-serif;
+*/
+
+:root{
+    font-size: 16px;
+    --size25: 25px;
+}
+*{
+    margin:0;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background: rgb(184, 213, 220);
+
+}
+body::-webkit-scrollbar{
+    width:0.25rem;
+}
+body::-webkit-scrollbar-thumb{
+    background: #6649b8;
+}
+body::-webkit-scrollbar-track{
+    background:#111 ;
+}
+a{
+    text-decoration: none;
+}
+main{
+    z-index: -10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 8rem;
+    padding: 50px;
+}
+
+.container h1,h2,h3{
+    font-weight: 700;
+}
+.container h1{
+    font-size: calc(var(--size25)*1.7);
+}
+.container h2{
+    font-size: var(--size25);
+}
+.container h3{
+    font-size: var(--size25);
+}
+strong{
+    color:rgb(82, 122, 202);
+    font-weight: 900;
+}
+.title{
+     text-align: center;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills div img{
+    width:150px;
+    
+    padding: 10px;
+    
+}
+.skills-container>h3{
+    text-align: center;
+    margin: 80px 0 40px 0;
+}
+.tooltip {
+    position: relative;
+    display: block;
+  }
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -30px;
+    left: 8%;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    margin-left: 10px;
+}
+@media screen and (max-width:1250px){
+    .title{
+        text-align: center;
+    }
+   
+    main{
+        margin-left: 0;
+        padding: 50px;
+    }
+    .skills{
+        padding-bottom: 25px;
+    }
+    .skills2{
+        padding-bottom: 125px;
+    }
+   
+}
+@media screen and (max-width:700px){
+    .skills>img{
+        width:100px;
+    }
+    .skills-container>h3{
+        left:30px;
+    }
+}
+@media screen and (max-width:600px){
+
+}

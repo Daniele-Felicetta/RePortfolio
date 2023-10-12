@@ -1,0 +1,163 @@
+
+nav{
+    z-index: 10;
+    background-color: rgb(85, 85, 85);
+    height:100%;
+    width:8rem;
+    position:fixed;
+    font-size:30px;
+    transition: all 300ms ease;
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    height:100%;
+    padding: 0;
+}
+
+.nav-item{
+    width:0;
+    margin:0; 
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    filter: grayscale(100%) opacity(0.7);
+    width:0;
+    margin:0; 
+}
+
+.img-link{
+    width: 50px;
+    margin-top: 5px;
+    margin-left: 1.5rem;
+    color:pink;
+    padding:15px;
+    box-shadow: 1px 1px 2.8px 2px rgb(50, 19, 19);
+    border-radius: 15px;
+}
+
+.nav-item:last-child{
+    margin-top:150px;
+}
+
+.text-link{
+    display: none;
+    opacity: 1;
+}
+
+nav:hover{
+    width:19rem;
+}
+
+nav:hover .text-link{
+    display: block;
+}
+
+nav:hover .img-link{
+margin-right: 2rem;
+}
+.nav-link:hover{
+    color:rgb(64, 139, 205)
+}
+
+nav:hover .nav-link{
+    filter: grayscale(0%) opacity(1);
+
+}
+@media screen and (max-width:1250px) {
+    nav{
+        height:7rem;
+        width:100%;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-link{
+        justify-content: center;
+
+    }
+    .nav-item:last-child{
+        margin-top:0px;
+    }
+    .img-link{
+        margin: 0 0 5px 0;
+    }
+    nav:hover .text-link{
+        display: none;
+    }
+    nav:hover{
+        width:100vw;
+    }
+    aside:hover .img-link{
+        margin-right: 0rem;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    nav{
+        height:7rem;
+        width:100vw;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav-link{
+        justify-content: center;
+
+    }
+    .nav-item:last-child{
+        margin-top:0px;
+    }
+    .img-link{
+        margin: 0 0 5px 0;
+    }
+    nav:hover .text-link{
+        display: none;
+    }
+    nav:hover{
+        width:100vw;
+    }
+    aside:hover .img-link{
+        margin-right: 0rem;
+    }
+    main, .main-projects{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .img-link{
+        width:40px;
+        padding:2vw;
+    }
+    nav{
+        height:5rem;
+    }
+}
+@media screen and (max-width:400px){
+    .img-link{
+        padding:1.8vw;
+    }
+    nav{
+        height:5rem;
+    }
+    nav ul{
+        margin-right:5px;
+    }
+}

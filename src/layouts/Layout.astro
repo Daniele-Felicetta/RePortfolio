@@ -1,0 +1,84 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="./assets/styles/navbar.css">
+		<link rel="stylesheet" href="./assets/styles/projects.css">
+		<link rel="stylesheet" href="./assets/styles/style.css">
+		<title>{title}</title>
+	</head>
+	<body>
+		<aside>
+			<nav>
+				<ul>
+					<li class="nav-item">
+						<a href="/" class="nav-link">
+							<img class="home img-link"  src="/assets/icons/icons-bar/home.svg" alt=""  />
+							<span class="text-link">HOME</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="projects" class="nav-link">
+							<img class="img-link" src="/assets/icons/icons-bar/diagram-project.svg" alt="" />
+							<span class="text-link">PROJECTS</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://github.com/Daniele-Felicetta" class="nav-link" target="_blank" rel="nopeener noreferrer" >
+							<img class="img-link" src="/assets/icons/icons-bar/github.svg" alt=""   />
+							<span class="text-link">GITHUB</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="https://drive.google.com/file/d/1-4eQwK-yvSOQriMVLefM2yMSh78dBAgX/view?usp=sharing" class="nav-link" target="_blank" rel="nopeener noreferrer">
+							<img class="img-link" src="/assets/icons/icons-bar/id-badge.svg" alt=""   />
+							<span class="text-link">CONTACTS</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>
