@@ -2,29 +2,28 @@
 import Layout from '../layouts/Layout.astro';
 ---
 <Layout title='Project'>
-    <div class="main-projects">
-        <div class="title">   
-          <h1 class='titleProjects'>Projects</h1>
+    <main class="main-projects">
+      <div class="title">   
+          <div class="container">
+            <h1 class='titleProjects'>Projects</h1>
+          </div>
         </div>
         <div class="project-list">
           <a href="https://www.peresistenzadiframmenti.it/" target="_blank" rel="nopeener noreferrer" >
             <figcaption>Matteo Trentin</figcaption>
-
             <img src="/assets/images/matteo-trentin.webp" alt="" >
-            
           </a>
           <a href="ext-pages/climate-dashboard/index.html" target="_blank" rel="nopeener noreferrer" >
             <figcaption>Matteo Trentin</figcaption>
-
-              <img src="/assets/images/matteo-trentin.webp" alt="" >
-            
+            <img src="/assets/images/matteo-trentin.webp" alt="" >
           </a>
           <a href="https://daniele-felicetta.github.io/miniPc/" target="_blank" rel="nopeener noreferrer">
-            <figcaption>miniPc (only desktop support)</figcaption>
-
-              <img src="/assets/images/minipc.webp" alt=""/>
-            
+            <figcaption>
+              <p>MiniPc</p>
+              <p>(only desktop support)</p>
+            </figcaption>
+            <img src="/assets/images/minipc.webp" alt=""/>
           </a>
         </div>
-    </div>
+    </main>
 </Layout>
