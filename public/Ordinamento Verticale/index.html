@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinamento Verticale
+    </title>
+</head>
+<body>
+    <nav id="counters">
+        <p id="char">Char Number:<span id="charCounter"></span></p>
+        <p id="words">Words Number:<span id="wordsCounter"></span></p>
+
+    </nav>
+    <div id="container">
+        <textarea id="text"></textarea>
+        <button>Apposto</button>
+    </div>
+    <div id="container2">
+        <p id="result">
+        </p>
+    </div>
+</body>
+</html>
+
+<style>
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        display: none;
+    }
+    #container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    button{
+        background-color: rgba(177, 28, 28, 0.747);
+    }
+    button:active{
+        background-color: rgb(15, 131, 44);
+
+    }
+    textarea{
+        height: 800px;
+        width: 1200px;
+        background-color: rgba(64, 202, 161, 0.596);
+    }
+
+    #container2 {
+        display: flex;
+        display: none;
+        width: 1400px;
+        margin-left: 20px;
+    }
+    #result{
+        width:1000px;
+    }
+    body{
+        background-color: antiquewhite
+    }
+</style>
+<script src="ordinamento.js"></script>

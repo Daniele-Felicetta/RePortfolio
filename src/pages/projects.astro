@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout title='Project'>
+<Layout title='Daniele Felicetta: Projects'>
     <main class="main-projects">
       <div class="title">   
           <div class="container">
@@ -9,14 +9,21 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </div>
         <div class="project-list">
-          <a href="https://www.peresistenzadiframmenti.it/" target="_blank" rel="nopeener noreferrer" >
-            <figcaption>Matteo Trentin</figcaption>
-            <img src="/assets/images/matteo-trentin.webp" alt="" >
+          <a href="https://climate-dashbord.vercel.app/" target="_blank" rel="nopeener noreferrer" >
+            <figcaption>Climate Dashboard</figcaption>
+            <img src="assets/images/climate-dashboard.png" alt="" >
           </a>
-          <a href="ext-pages/climate-dashboard/index.html" target="_blank" rel="nopeener noreferrer" >
-            <figcaption>Matteo Trentin</figcaption>
-            <img src="/assets/images/matteo-trentin.webp" alt="" >
+         
+          <a href="https://todo-calendar-chi.vercel.app/" target="_blank" rel="nopeener noreferrer" >
+            <figcaption>Notes and Calendar</figcaption>
+            <img src="/assets/images/calendar.jpeg" alt="" >
           </a>
+
+          <a href="https://searchimage.netsons.org/" target="_blank" rel="nopeener noreferrer" >
+            <figcaption>Search Image</figcaption>
+            <img src="/assets/images/searchimages.webp" alt="" >
+          </a>
+          
           <a href="https://daniele-felicetta.github.io/miniPc/" target="_blank" rel="nopeener noreferrer">
             <figcaption>
               <p>MiniPc</p>
@@ -24,6 +31,37 @@ import Layout from '../layouts/Layout.astro';
             </figcaption>
             <img src="/assets/images/minipc.webp" alt=""/>
           </a>
+          <a href="https://www.peresistenzadiframmenti.it/" target="_blank" rel="nopeener noreferrer" >
+            <figcaption>Matteo Trentin</figcaption>
+            <img src="/assets/images/matteo-trentin.webp" alt="" >
+          </a>
         </div>
     </main>
 </Layout>
+<script>
+    const fig=document.getElementsByTagName("figcaption");
+    const arr=[
+      "48d5e7",
+      "8ffba4",
+      "abf857",
+      "d19de5",
+      "fbd1d9",
+      "a0cb5a",
+      "f9f5da",
+      "e0fa3e",
+      "88d4e0",
+      "58cbc1",
+      "a2eb59",
+      "b9e296"
+    ]
+    function color(){
+      for(let i=0;i<fig.length;i++){
+        const randomIndex = Math.floor(Math.random()*arr.length);
+        const randomColor= arr[randomIndex];
+        fig[i].style.color="#"+randomColor;
+        console.log(randomColor);
+      }
+    }
+    color();
+    
+</script>
